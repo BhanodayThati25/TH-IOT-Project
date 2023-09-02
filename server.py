@@ -58,6 +58,10 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
     token = create_access_token(user.username)
     return token
 
+@app.get("/check-login/{username}", response_model=bool)
+async def check_login(username: str):
+    return username in sessions_db.values()
+
 @app.post("/logout")
 async def logout(token: str):
     if token not in sessions_db:
