@@ -19,16 +19,22 @@ Follow these steps to run the server:
    https://github.com/BhanodayThati25/TH-IOT-Project
    ```
 
-2. Install Dependencies
+2. Change directory to the cloned folder
+
+   ```
+   cd TH-IOT-Project
+   ```
+
+3. Install Dependencies
 
    ```
    pip install -r requirements.txt
    ```
 
-3. Run the server
+4. Run the server
 
    ```
    uvicorn server:app --reload
    ```
 
-4. Open the API Documentation and Try out: [Localhost](http://localhost:8000/docs)
+5. Open the API Documentation and Try out: [Localhost](http://localhost:8000/docs)
