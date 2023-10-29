@@ -34,7 +34,7 @@ Follow these steps to run the server:
 4. Run the server
 
    ```
-   uvicorn server:app --reload
+   uvicorn server:app --host 0.0.0.0 --reload
    ```
 
 5. Open the API Documentation and Try out: [Localhost](http://localhost:8000/docs)
