@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the server URL
-SERVER_URL="http://localhost:8000"
+SERVER_URL="http://10.250.60.58:8000"
 
 # Function to register a new user
 register_user() {
